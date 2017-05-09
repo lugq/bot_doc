@@ -1,8 +1,8 @@
 ## Android Studio工程
 
-1.请在工程文件根目录下创建一个名为 libs 的子目录，并将360广告 SDK 的 aar 包拷贝到 libs 目录下;
+1.请在工程文件根目录下创建一个名为 libs 的子目录，并将图文的 SDK 中 aar 包拷贝到 libs 目录下;
 
-2.`build.gradle`中配置如下：
+2. `build.gradle`中配置如下：
 
 ```
 ...
@@ -25,7 +25,5 @@ repositories {
 }
 ```
 
-
-
-
+3.`Sync Project` 完成。
 
