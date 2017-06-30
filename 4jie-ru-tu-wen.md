@@ -5,7 +5,7 @@
 ```
 public class MainActivity extends FragmentActivity {
 
-    private NewsIndexFragment mNewsIndexFragment;
+    private IndexFragment mNewsIndexFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,7 +13,7 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
         mNewsIndexFragment = new NewsIndexFragment();
     }
-    
+
     // 打开NewsIndexFragment即可
     public void openNews(View view) {
         if (!mNewsIndexFragment.isAdded()) {

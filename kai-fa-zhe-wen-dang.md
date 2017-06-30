@@ -1,5 +1,3 @@
-
-
 添加scheme调用
 
 ```
@@ -10,6 +8,11 @@
     <application
         ...
         android:theme="@style/AppTheme">
+        
+        <!--  设置申请的 AppId 和 AppKey -->
+        <meta-data android:name="TTC_APPID" android:value="申请的AppId" />
+        <meta-data android:name="TTC_APPKEY" android:value="申请的AppKey" />
+              
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,8 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <!-- 添加以下配置 -->
+
+        <!-- 深度链接功能需要添加以下配置 -->
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
 
